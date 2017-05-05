@@ -2,13 +2,15 @@ import Vue, { ComponentOptions } from 'vue'
 import { createDecorator } from 'vue-class-component'
 
 export interface RxComponentOptions extends ComponentOptions<Vue> {
-  subscriptions: () => Vue
+  subscriptions: () => any
 }
 
-export const fromEvent = (selector, eventName, fn) => createDecorator((options: RxComponentOptions, key) => {
+export const fromEvent = (selector, eventName, fn) => createDecorator((options: any, key) => {
   const { subscriptions = () => { } } = options
 
-  options.subscriptions = function (this: any) {
+  console.log({ selector, eventName })
+
+  options.subscriptions = function () {
     return {
       [key]: fn(this.$fromDOMEvent(selector, eventName)),
       ...subscriptions.bind(this)()

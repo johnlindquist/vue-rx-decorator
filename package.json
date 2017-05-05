@@ -2,13 +2,13 @@
   "name": "vue-rx-decorator",
   "version": "5.0.1",
   "description": "rx decorators for Vue Component",
-  "main": "lib/vue-rx-decorator.js",
+  "main": "lib/index.js",
   "keywords": [
     "vue",
     "typescript",
     "decorator"
   ],
-  "author": "kaorun343",
+  "author": "johnlindquist",
   "license": "MIT",
   "directories": {
     "test": "test"
