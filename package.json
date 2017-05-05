@@ -1,8 +1,8 @@
 {
   "name": "vue-rx-decorator",
-  "version": "5.0.1",
+  "version": "1.0.2",
   "description": "rx decorators for Vue Component",
-  "main": "lib/index.js",
+  "main": "vue-rx-decorator.ts",
   "keywords": [
     "vue",
     "typescript",
@@ -10,22 +10,11 @@
   ],
   "author": "johnlindquist",
   "license": "MIT",
-  "directories": {
-    "test": "test"
-  },
-  "scripts": {
-    "build": "tsc"
-  },
-  "files": [
-    "lib"
-  ],
   "devDependencies": {
     "typescript": "^2.3.2"
   },
-  "typings": "./lib/index.d.ts",
   "dependencies": {
     "vue": "^2.3.2",
-    "vue-class-component": "^5.0.1",
-    "vue-rx": "^3.1.1"
+    "vue-class-component": "^5.0.1"
   }
 }
