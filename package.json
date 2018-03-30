@@ -3,6 +3,7 @@
   "version": "1.0.2",
   "description": "rx decorators for Vue Component",
   "main": "vue-rx-decorator.ts",
+  "repository": "https://github.com/johnlindquist/vue-rx-decorator.git",
   "keywords": [
     "vue",
     "typescript",
